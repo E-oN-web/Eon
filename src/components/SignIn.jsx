@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import Gitcat from "../assets/Gitcat.png";
 
 function SignIn() {
   return (
@@ -69,13 +70,21 @@ function SignIn() {
           </div>
         </form>
 
-        <p class="mt-10 text-center text-sm text-gray-500">
-          Not a member?
+        <p className="mt-10 text-center text-sm text-gray-500">
+          <span style={{ fontSize: "20px" }}>SignUp to Github</span>
           <a
-            href="/signup"
-            class="font-semibold leading-6 text-semiTitle hover:text-hover"
+            href="https://github.com/login"
+            style={{ display: "block", margin: "auto", width: "fit-content" }}
           >
-            Click here
+            <img
+              src={Gitcat}
+              alt=""
+              style={{
+                display: "inline",
+                verticalAlign: "middle",
+                width: "100px",
+              }}
+            />
           </a>
         </p>
       </div>
